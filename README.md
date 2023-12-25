@@ -5,7 +5,7 @@
 
 - 🏅 I'm having recognized certs as **[C|EH](https://iehdreamer.in/images/CEH.png) & [eWPTX](https://certs.ine.com/ea676ba8-8b23-408a-b4c7-94ccd9596f20)**
 
-- 🕵️ I have the hall of fame (HoF) from major companies some of them are [MICROSOFT](https://msrc.microsoft.com/update-guide/acknowledgement/online), [NVIDIA](https://www.nvidia.com/en-in/product-security/acknowledgements/#:~:text=Rajnish%20Kumar%20(Dreamer)), [VISMA](https://www.visma.com/trust-centre/security/hall-of-fame#:~:text=2023-,Rajnish%20Kumar%20(Dreamer),-2023), [JP MORGAN CHASE & CO.](https://responsibledisclosure.jpmorganchase.com/hc/en-us/articles/360023828114-Recognition-for-Responsible-Disclosures#:~:text=RAJNISH%20KUMAR%20(Dreamer)), [U.S. Govt HHS](https://www.hhs.gov/vulnerability-disclosure-policy/acknowledgments/index.html), and many more.
+- 🕵️ I have the hall of fame (HoF) from major companies some of them are [MICROSOFT](https://msrc.microsoft.com/update-guide/acknowledgement/online), [ADOBE](https://helpx.adobe.com/security/acknowledgements.html#:~:text=RAJNISH%20KUMAR%20(Dreamer)),[NVIDIA](https://www.nvidia.com/en-in/product-security/acknowledgements/#:~:text=Rajnish%20Kumar%20(Dreamer)), [VISMA](https://www.visma.com/trust-centre/security/hall-of-fame#:~:text=2023-,Rajnish%20Kumar%20(Dreamer),-2023), [JP MORGAN CHASE & CO.](https://responsibledisclosure.jpmorganchase.com/hc/en-us/articles/360023828114-Recognition-for-Responsible-Disclosures#:~:text=RAJNISH%20KUMAR%20(Dreamer)), [U.S. Govt HHS](https://www.hhs.gov/vulnerability-disclosure-policy/acknowledgments/index.html), and many more.
 
 - 🏢 I’m having a startup named **[CyberXield](https://cyberxield.in)**
 
