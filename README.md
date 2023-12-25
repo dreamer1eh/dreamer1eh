@@ -5,11 +5,11 @@
 
 - 🏅 I'm having recognized certs as **C|EH & eWPTX**
 
-- 👯 I’m looking to collaborate on **[InfoSec VAPT Projects](https://cyberxield.in/service.html)**
+- 🤝 I’m looking to collaborate on **[InfoSec VAPT Projects](https://cyberxield.in/service.html)**
 
-- 🤝 I’m having a startup named **[CyberXield](https://cyberxield.in)**
+- 🏢 I’m having a startup named **[CyberXield](https://cyberxield.in)**
 
-- 👨‍💻 Know more about me on **[Web: iehdreamer.in](https://iehdreamer.in)**
+- 👨‍💻 Know more about me on **[Portfolio: iehdreamer.in](https://iehdreamer.in)**
 
 - 💬 Ask me about **Cybersecurity Trainings & Services**
 
