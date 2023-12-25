@@ -9,7 +9,7 @@
 
 - 🏢 I’m having a startup named **[CyberXield](https://cyberxield.in)**
 
-- 👨‍💻 Know more about me on **[Portfolio: iehdreamer.in](https://iehdreamer.in)**
+- 👨‍💻 Know more about me on my portfolio at **[iehdreamer.in](https://iehdreamer.in)**
 
 - 💬 Ask me about **Cybersecurity Trainings & Services**
 
