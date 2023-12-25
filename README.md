@@ -3,11 +3,13 @@
 
 - 🔭 I’m currently working professional in **[Cyberarch Consulting, Estonia](https://cyberarch.eu)**
 
-- 🏅 I'm having recognized certs as **C|EH & eWPTX**
+- 🏅 I'm having recognized certs as **[C|EH](https://iehdreamer.in/images/CEH.png) & [eWPTX](https://certs.ine.com/ea676ba8-8b23-408a-b4c7-94ccd9596f20)**
 
-- 🤝 I’m looking to collaborate on **[InfoSec VAPT Projects](https://cyberxield.in/service.html)**
+- 🕵️ I have the hall of fame (HoF) from major companies some of them are [MICROSOFT](https://msrc.microsoft.com/update-guide/acknowledgement/online), [NVIDIA](https://www.nvidia.com/en-in/product-security/acknowledgements/#:~:text=Rajnish%20Kumar%20(Dreamer)), [VISMA](https://www.visma.com/trust-centre/security/hall-of-fame#:~:text=2023-,Rajnish%20Kumar%20(Dreamer),-2023), [JP MORGAN CHASE & CO.](https://responsibledisclosure.jpmorganchase.com/hc/en-us/articles/360023828114-Recognition-for-Responsible-Disclosures#:~:text=RAJNISH%20KUMAR%20(Dreamer)), [U.S. Govt HHS](https://www.hhs.gov/vulnerability-disclosure-policy/acknowledgments/index.html), and many more.
 
 - 🏢 I’m having a startup named **[CyberXield](https://cyberxield.in)**
+
+- 🤝 I’m looking to collaborate on **[InfoSec VAPT Projects](https://cyberxield.in/service.html)**
 
 - 👨‍💻 Know more about me on my portfolio at **[iehdreamer.in](https://iehdreamer.in)**
 
