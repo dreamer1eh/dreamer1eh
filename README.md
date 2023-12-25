@@ -34,3 +34,6 @@
 <h3 align="left">Some of my holopin badges: </h3>
 
 [![@dreamer's Holopin board](https://holopin.me/dreamer)](https://holopin.io/@dreamer)
+
+<br clear="both"> 
+<img src="https://raw.githubusercontent.com/maurodesouza/maurodesouza/output/snake.svg" alt="Snake animation" />
