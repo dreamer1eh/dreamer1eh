@@ -32,5 +32,3 @@
 <h3 align="left">Some of my holopin badges: </h3>
 
 [![@dreamer's Holopin board](https://holopin.me/dreamer)](https://holopin.io/@dreamer)
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_VqOmuChJw0?si=pk18jr0-6CIfz9M0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
