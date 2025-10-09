@@ -83,23 +83,112 @@
     .glitch {
     font-size: 3rem;
     font-weight: 700;
+    color: #00ff41;
     text-transform: uppercase;
     position: relative;
-    text-shadow: 0.05em 0 0 #00fffc, -0.025em -0.05em 0 #fc00ff, 0.025em 0.05em 0 #fffc00;
-    animation: glitch 500ms infinite;
+    letter-spacing: 0.1em;
+    text-shadow: 
+        0.05em 0 0 #00fffc, 
+        -0.025em -0.05em 0 #fc00ff, 
+        0.025em 0.05em 0 #fffc00,
+        0 0 20px #00ff41,
+        0 0 40px #00ff41;
+    animation: glitch 2s infinite, glow-pulse 3s ease-in-out infinite alternate;
     }
 
     @keyframes glitch {
+    0%, 74%, 76%, 100% {
+        text-shadow: 
+            0.05em 0 0 #00fffc, 
+            -0.025em -0.05em 0 #fc00ff, 
+            0.025em 0.05em 0 #fffc00,
+            0 0 20px #00ff41,
+            0 0 40px #00ff41;
+        transform: translate(0);
+    }
+    75% {
+        text-shadow: 
+            -0.05em -0.025em 0 #00fffc, 
+            0.025em 0.025em 0 #fc00ff, 
+            -0.05em -0.05em 0 #fffc00,
+            0 0 30px #ff0041,
+            0 0 60px #ff0041;
+        transform: translate(0.02em, -0.01em);
+    }
+    76% {
+        text-shadow: 
+            0.025em 0.05em 0 #00fffc, 
+            -0.05em -0.025em 0 #fc00ff, 
+            0.05em 0.025em 0 #fffc00,
+            0 0 25px #00ff88,
+            0 0 50px #00ff88;
+        transform: translate(-0.01em, 0.02em);
+    }
+    }
+
+    @keyframes glow-pulse {
     0% {
-        text-shadow: 0.05em 0 0 #00fffc, -0.025em -0.05em 0 #fc00ff, 0.025em 0.05em 0 #fffc00;
+        text-shadow: 
+            0.05em 0 0 #00fffc, 
+            -0.025em -0.05em 0 #fc00ff, 
+            0.025em 0.05em 0 #fffc00,
+            0 0 20px #00ff41,
+            0 0 40px #00ff41;
     }
-    14% {
-        text-shadow: 0.05em 0 0 #00fffc, -0.025em -0.05em 0 #fc00ff, 0.025em 0.05em 0 #fffc00;
+    100% {
+        text-shadow: 
+            0.05em 0 0 #00fffc, 
+            -0.025em -0.05em 0 #fc00ff, 
+            0.025em 0.05em 0 #fffc00,
+            0 0 30px #00ff41,
+            0 0 60px #00ff41,
+            0 0 80px #00ff41;
     }
-    15% {
-        text-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.025em 0 #fc00ff, -0.05em -0.05em 0 #fffc00;
     }
-    /* ... (add more steps for a more complex glitch) ... */
+
+    .text-rainbow-animation {
+        font-family: 'Courier New', monospace;
+        font-weight: 900;
+        background: linear-gradient(
+            45deg,
+            #00ff41,
+            #00fffc,
+            #fc00ff,
+            #fffc00,
+            #ff0041,
+            #00ff88,
+            #00ff41
+        );
+        background-size: 400% 400%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: cyber-rainbow 4s ease-in-out infinite, text-flicker 6s infinite;
+        position: relative;
+    }
+
+    @keyframes cyber-rainbow {
+        0%, 100% {
+            background-position: 0% 50%;
+        }
+        25% {
+            background-position: 100% 50%;
+        }
+        50% {
+            background-position: 100% 100%;
+        }
+        75% {
+            background-position: 0% 100%;
+        }
+    }
+
+    @keyframes text-flicker {
+        0%, 98%, 100% {
+            opacity: 1;
+        }
+        99% {
+            opacity: 0.8;
+        }
     }
 
     .section.back-section {
@@ -1649,3 +1738,106 @@
         -webkit-box-shadow: none;
         box-shadow: none;
     }
+
+/* Live Skills Typing Animation - Simple Text Style */
+.skills-typing-container {
+    text-align: center;
+    margin: 15px 0;
+    font-family: 'Courier New', monospace;
+    font-size: 16px;
+    color: #00ff41;
+}
+
+.typing-prefix {
+    color: #00ff88;
+    font-weight: bold;
+}
+
+.typing-text {
+    color: #ffffff;
+    font-weight: bold;
+    min-height: 1.2em;
+    display: inline-block;
+}
+
+.typing-cursor {
+    color: #00ff41;
+    animation: blink-cursor 1s infinite;
+    font-weight: bold;
+}
+
+@keyframes blink-cursor {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+}
+
+/* Responsive Design for Skills Typing */
+@media (max-width: 768px) {
+    .skills-typing-container {
+        font-size: 16px;
+        padding: 12px 15px;
+        margin: 15px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-typing-container {
+        font-size: 14px;
+        padding: 10px 12px;
+    }
+    
+    .typing-prefix {
+        display: block;
+        margin-bottom: 5px;
+    }
+}/
+* Live Skills Typing Animation - Simple Text Style */
+.skills-typing-container {
+    text-align: center;
+    margin: 15px 0;
+    font-family: 'Courier New', monospace;
+    font-size: 16px;
+    color: #00ff41;
+}
+
+.typing-prefix {
+    color: #00ff88;
+    font-weight: bold;
+}
+
+.typing-text {
+    color: #ffffff;
+    font-weight: bold;
+    min-height: 1.2em;
+    display: inline-block;
+}
+
+.typing-cursor {
+    color: #00ff41;
+    animation: blink-cursor 1s infinite;
+    font-weight: bold;
+}
+
+@keyframes blink-cursor {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+}
+
+/* Responsive Design for Skills Typing */
+@media (max-width: 768px) {
+    .skills-typing-container {
+        font-size: 14px;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-typing-container {
+        font-size: 12px;
+    }
+    
+    .typing-prefix {
+        display: block;
+        margin-bottom: 5px;
+    }
+}
