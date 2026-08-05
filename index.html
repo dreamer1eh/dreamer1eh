@@ -103,11 +103,11 @@ button{font-family:inherit}
 @keyframes blink{50%{opacity:0}}
 
 /* ============ NAVBAR ============ */
-#navbar{position:fixed;top:0;left:0;right:0;height:var(--nav-h);z-index:500;display:flex;align-items:center;justify-content:space-between;padding:0 28px;background:rgba(5,5,10,0.65);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--bd)}
+#navbar{position:fixed;top:0;left:0;right:0;height:var(--nav-h);z-index:500;display:flex;align-items:center;justify-content:space-between;padding:0 28px;background:rgba(5,5,10,0.82);backdrop-filter:blur(9px);-webkit-backdrop-filter:blur(9px);border-bottom:1px solid var(--bd)}
 [data-mode="light"] #navbar{background:rgba(236,238,242,0.7)}
 #nav-logo{font-family:var(--font-mono);font-weight:800;font-size:1rem;color:var(--txb);letter-spacing:1px}
 #nav-logo .lb{color:var(--p)}
-#logo-word{display:inline-block;min-width:7ch;text-align:left}
+.logo-word{display:inline-block;min-width:7ch;text-align:left}
 #nav-links{display:flex;gap:26px;list-style:none}
 #nav-links a{font-family:var(--font-mono);font-size:0.72rem;letter-spacing:1.2px;color:var(--txd);text-transform:uppercase;position:relative;padding:6px 0}
 #nav-links a::after{content:'';position:absolute;left:0;bottom:0;width:0;height:1px;background:var(--p);box-shadow:0 0 8px var(--p);transition:width 0.3s}
@@ -120,7 +120,7 @@ button{font-family:inherit}
   #nav-burger{display:block}
   /* backdrop-filter on #navbar makes it the containing block for fixed descendants —
      use an explicit height (valid against navbar OR viewport) instead of bottom:0 */
-  #nav-links{position:fixed;top:var(--nav-h);right:0;bottom:auto;height:calc(100vh - var(--nav-h));height:calc(100dvh - var(--nav-h));width:min(280px,80vw);flex-direction:column;gap:4px;padding:26px 22px;background:rgba(6,8,12,0.96);backdrop-filter:blur(20px);border-left:1px solid var(--bd);transform:translateX(100%);visibility:hidden;transition:transform 0.35s cubic-bezier(0.22,1,0.36,1),visibility 0.35s;overflow-y:auto}
+  #nav-links{position:fixed;top:var(--nav-h);right:0;bottom:auto;height:calc(100vh - var(--nav-h));height:calc(100dvh - var(--nav-h));width:min(280px,80vw);flex-direction:column;gap:4px;padding:26px 22px;background:rgba(6,8,12,0.97);backdrop-filter:blur(10px);border-left:1px solid var(--bd);transform:translateX(100%);visibility:hidden;transition:transform 0.35s cubic-bezier(0.22,1,0.36,1),visibility 0.35s;overflow-y:auto}
   [data-mode="light"] #nav-links{background:rgba(236,238,242,0.97)}
   #nav-links.open{transform:translateX(0);visibility:visible}
   #nav-links a{font-size:0.85rem;padding:11px 8px;border-bottom:1px solid rgba(var(--pr),0.08)}
@@ -181,12 +181,23 @@ main{position:relative;z-index:10}
 @keyframes floatDown{50%{transform:translateY(7px)}}
 
 /* ============ ABOUT ============ */
-.about-grid{display:grid;grid-template-columns:1.05fr 0.95fr;gap:54px;align-items:start}
+.about-grid{display:grid;grid-template-columns:270px 1.05fr 0.95fr;gap:44px;align-items:start}
+.about-photo{position:sticky;top:calc(var(--nav-h) + 30px)}
+.photo-frame .photo-body{position:relative}
+.photo-frame img{display:block;width:100%}
+.photo-frame .photo-body::after{content:'';position:absolute;inset:0;pointer-events:none;background:repeating-linear-gradient(0deg,transparent 0 3px,rgba(0,0,0,0.07) 3px 4px),linear-gradient(160deg,rgba(var(--pr),0.1),transparent 45%)}
+@media(max-width:1100px){
+  .about-grid{grid-template-columns:1fr 1fr}
+  .about-photo{grid-column:1/-1;position:static;max-width:250px;margin:0 auto;width:100%}
+}
 .about-bio h3{color:var(--txb);margin-bottom:14px;font-size:1.05rem;font-weight:700}
 .about-bio p{color:var(--txd);font-size:0.92rem;margin-bottom:16px}
 .about-detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px 18px;margin:22px 0 28px;list-style:none}
 .about-detail-grid li{font-size:0.8rem;color:var(--txd)}
 .about-detail-grid li strong{color:var(--p);font-family:var(--font-mono);font-weight:500;margin-right:5px}
+.skill-group-label{font-family:var(--font-mono);font-size:0.68rem;font-weight:700;letter-spacing:1.5px;color:var(--p);text-transform:uppercase;margin:26px 0 14px;padding-bottom:7px;border-bottom:1px solid rgba(var(--pr),0.2)}
+.skill-group-label:first-child{margin-top:0}
+.skill-group-label i{margin-right:6px;font-size:0.75rem}
 .skill-row{margin-bottom:15px}
 .skill-info{display:flex;justify-content:space-between;font-size:0.78rem;margin-bottom:6px}
 .skill-name{color:var(--tx)}
@@ -269,6 +280,9 @@ main{position:relative;z-index:10}
 .cert-f,.cert-b{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:12px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:16px;text-align:center}
 .cert-f{background:var(--glass);border:1px solid var(--bd)}
 .cert-f i{font-size:1.9rem;color:var(--p);margin-bottom:12px}
+.cert-logo{height:58px;max-width:82%;object-fit:contain;margin-bottom:12px;filter:drop-shadow(0 0 10px rgba(var(--pr),0.25))}
+.cert-view{display:inline-flex;align-items:center;gap:6px;font-family:var(--font-mono);font-size:0.6rem;letter-spacing:1px;margin-top:9px;padding:4px 10px;border:1px solid rgba(var(--pr),0.45);border-radius:4px;color:var(--p)}
+.cert-view:hover{background:rgba(var(--pr),0.1);text-shadow:none}
 .cert-f h4{font-size:0.76rem;color:var(--tx);font-weight:500;line-height:1.4}
 .cert-b{background:rgba(var(--pr),0.05);border:1px solid rgba(var(--pr),0.4);transform:rotateY(180deg)}
 .cert-b h4{font-family:var(--font-mono);font-size:0.78rem;color:var(--p);margin-bottom:6px;line-height:1.4}
@@ -290,7 +304,7 @@ main{position:relative;z-index:10}
 .video-card:hover .vc-play{opacity:1}
 .vc-play i{width:52px;height:52px;display:flex;align-items:center;justify-content:center;border-radius:50%;background:rgba(var(--pr),0.9);color:var(--bg);font-size:1.1rem;padding-left:4px}
 .vc-meta{padding:15px 17px 17px}
-.vc-meta h4{font-size:0.82rem;color:var(--tx);font-weight:600;line-height:1.5;margin-bottom:8px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.vc-meta h4{font-size:0.82rem;color:var(--tx);font-weight:600;line-height:1.5;margin-bottom:8px;display:-webkit-box;-webkit-line-clamp:2;line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .video-card:hover .vc-meta h4{color:var(--txb)}
 .vc-stats{font-family:var(--font-mono);font-size:0.66rem;color:var(--txd);letter-spacing:0.5px}
 
@@ -405,7 +419,7 @@ main{position:relative;z-index:10}
 
 <!-- ===== NAVBAR ===== -->
 <header id="navbar">
-  <a href="#home" id="nav-logo">[<span class="lb" id="logo-word">R4JN15H</span>]<span class="lb">_</span></a>
+  <a href="#home" id="nav-logo">[<span class="lb logo-word">R4JN15H</span>]<span class="lb">_</span></a>
   <nav aria-label="Main navigation">
     <ul id="nav-links">
       <li><a href="#home" class="on">Home</a></li>
@@ -455,10 +469,17 @@ main{position:relative;z-index:10}
       <p class="section-sub">Offensive security professional — breaking things responsibly so they can be built back stronger.</p>
     </div>
     <div class="about-grid">
+      <div class="about-photo">
+        <div class="term-window photo-frame">
+          <div class="term-bar"><span class="td r"></span><span class="td y"></span><span class="td g"></span><span class="term-title">~/images/dp.png</span></div>
+          <div class="photo-body"><img src="images/dp.png" alt="Rajnish Kumar — Dreamer" loading="lazy"></div>
+        </div>
+      </div>
       <div class="about-bio">
         <h3>Hi, I'm Rajnish Kumar — a Red Team Professional.</h3>
         <p>Myself Rajnish Kumar, a cybersecurity professional with a deep passion for the offensive side of security. Since graduating with my B.Tech in Computer Science, I've spent more than 4 years in the industry, focusing on Red Teaming and penetration testing (VAPT).</p>
         <p>I have hands-on experience securing diverse environments, including Linux, Windows, and cloud infrastructures — and as Team Lead at Secnora I've spearheaded 100+ high-impact VAPT projects for global enterprise clients.</p>
+        <p>My current edge is offensive AI security: red-teaming Gen AI and LLM applications against the OWASP LLM Top 10 — prompt injection, jailbreaks, agentic tool-calling abuse — while weaponizing AI itself to sharpen and scale my own assessments.</p>
         <ul class="about-detail-grid" id="about-details"></ul>
         <a href="mailto:contactrajnish@duck.com" class="btn-neon"><i class="fas fa-file-arrow-down"></i> Ask For Resume</a>
       </div>
@@ -559,7 +580,7 @@ main{position:relative;z-index:10}
 <footer id="site-footer">
   <div class="footer-inner">
     <div class="footer-col">
-      <div class="footer-brand">[<span class="lb">R4JN15H</span>]<span class="lb">_</span></div>
+      <div class="footer-brand">[<span class="lb logo-word">R4JN15H</span>]<span class="lb">_</span></div>
       <p>Senior Security Engineer &amp; Team Lead. Securing what matters — one engagement, one bug, one dreamer at a time.</p>
     </div>
     <div class="footer-col">
@@ -581,7 +602,6 @@ main{position:relative;z-index:10}
         <a href="https://www.youtube.com/@iehdreamer" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
         <a href="https://x.com/i_eh_dreamer/" target="_blank" rel="noopener" aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
         <a href="https://github.com/dreamer1eh/" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
-        <a href="https://www.threads.net/@i_eh_dreamer" target="_blank" rel="noopener" aria-label="Threads"><i class="fab fa-threads"></i></a>
       </div>
     </div>
   </div>
@@ -616,7 +636,7 @@ try {
   // ----- Renderer / scene / camera -----
   const bgCanvas = document.getElementById('bg3d');
   const renderer = new THREE.WebGLRenderer({canvas:bgCanvas,antialias:true,alpha:true});
-  renderer.setPixelRatio(Math.min(window.devicePixelRatio, MOBILE?1.5:2));
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio,1.5));
   renderer.setSize(window.innerWidth,window.innerHeight);
   renderer.setClearColor(0x000000,0); // transparent — body bg (theme/mode aware) shows through
   const scene = new THREE.Scene();
@@ -910,11 +930,12 @@ try {
 
 <script>
 /* ==================== DATA ==================== */
+const aiSkillsData=[{n:'Gen AI / LLM Application Pentesting (OWASP LLM Top 10)',p:100},{n:'Prompt Injection & Jailbreak Red Teaming',p:100},{n:'Agentic AI & Tool-Calling Security Assessment',p:100},{n:'AI-Assisted Pentesting & Offensive Automation',p:100}];
 const skillsData=[{n:'Vulnerability Assessment',p:100},{n:'Web App & API Pen-Testing',p:100},{n:'Mobile App Pen-Testing',p:100},{n:'Network/Infrastructure Pentesting',p:100},{n:'Cloud Pen-Testing',p:100},{n:'Active Directory Pen-Testing',p:100},{n:'Cloud Configuration Review',p:100},{n:'Social Engineering Assessment',p:100},{n:'Networking',p:100},{n:'OSINT',p:100},{n:'Web Development (Front-End)',p:90},{n:'Web Hosting & Security Review',p:100},{n:'Bash Scripting',p:100},{n:'Python Scripting',p:90}];
 const aboutFields=[['E-mail:','contactrajnish@duck.com','mailto:contactrajnish@duck.com'],['YouTube:','i_eh_dreamer','https://www.youtube.com/@iehdreamer'],['Course:','B.TECH',null],['Branch:','Computer Science & Engineering',null],['Work:','SECNORA, Estonia (Full-Time)',null],['Role:','Senior Security Engineer - Team Lead',null],['City:','New Delhi',null],['Location:','Delhi, India',null]];
 const achData=[{org:'MICROSOFT',type:'hof',reward:'HALL OF FAME (x3)',link:'https://msrc.microsoft.com/update-guide/en-us/acknowledgement/online',desc:'DOM-XSS(x1) & HTML INJECTION(x4) (OCT,NOV 2022)'},{org:'NVIDIA',type:'hof',reward:'HALL OF FAME',link:'https://www.nvidia.com/en-us/security/acknowledgements/',desc:'HTML INJECTION (APRIL 2023)'},{org:'ADOBE',type:'hof',reward:'HALL OF FAME & HACKERONE THANKS',link:'https://helpx.adobe.com/security/acknowledgements.html',desc:'DOM-XSS(x2) & HTML INJECTION(x2)'},{org:'ADIDAS',type:'bounty',reward:'BOUNTY & BUG CROWD POINTS',link:'#',desc:'DOM-XSS(x2) & HTML INJECTION(x2)'},{org:'HITACHI VANTARA',type:'ack',reward:'APPRECIATION LETTER',link:'https://www.linkedin.com/posts/rajnish-kumar-eh_appreciation-letterrajnishkumar-activity-7024615537905152000-wFHN',desc:'79 websites vulnerable to DOM-XSS on Shodan'},{org:'VISMA',type:'hof',reward:'HOF, BOUNTY, SWAGS',link:'https://www.linkedin.com/posts/rajnish-kumar-eh_bughunting-intigriti-bugbounty-activity-7012095970700091393-DyD2',desc:'MASS PII DISCLOSURE & DOM-XSS(x3)'},{org:'JP MORGAN CHASE & CO.',type:'hof',reward:'HALL OF FAME',link:'https://responsibledisclosure.jpmorganchase.com/',desc:'HTML INJECTION (x2)'},{org:'DHAN.CO',type:'bounty',reward:'BOUNTY',link:'#',desc:'SSRF, HTML INJ, CORS, HOST HEADER INJ'},{org:'U.S. HHS',type:'hof',reward:'HALL OF FAME',link:'https://www.hhs.gov/vulnerability-disclosure-policy/acknowledgments/',desc:'XSS ON U.S. GOVT.'},{org:'CIMPRESS',type:'other',reward:'BUG CROWD POINTS',link:'#',desc:'HTML INJECTION(x4)'},{org:'SOCIE APP',type:'bounty',reward:'VOUCHER WORTH 450€',link:'https://www.linkedin.com/posts/rajnish-kumar-eh_securityabrmatters-bugbounty-bughunting-activity-7019991656636518400-zagw',desc:'HTML INJECTION'},{org:'COMODO',type:'ack',reward:'ACKNOWLEDGEMENTS',link:'https://www.linkedin.com/posts/rajnish-kumar-eh_bughunting-bug-security-activity-7019547765726666753-6L9U',desc:'HTML INJECTION'},{org:'HACKTOBERFEST 2022',type:'other',reward:'BADGES & SWAGS',link:'#',desc:'HACKTOBERFEST CODING'},{org:'BINOMO',type:'bounty',reward:'BOUNTY',link:'#',desc:'CLICKJACKING'},{org:'UNIVERSITY OF COLOGNE',type:'ack',reward:'CERTIFICATE OF APPRECIATION',link:'#',desc:'XSS VIA PROTOTYPE POLLUTION'},{org:'VMware',type:'other',reward:'No Reward',link:'#',desc:'6 reports, low severity HTML INJ'},{org:'JETBRAINS',type:'other',reward:'No Reward',link:'#',desc:'Low severity HTML INJECTION'},{org:'POLAND GOVT.',type:'ack',reward:'LETTER OF APPRECIATION',link:'https://www.linkedin.com/posts/rajnish-kumar-eh_poland-govt-appreciation-letter-activity-6975066232756580352-Q4Pc/',desc:'DOM-XSS'},{org:'EMBL-EBI',type:'hof',reward:'HALL OF FAME',link:'https://www.ebi.ac.uk/security/hall-of-fame/',desc:'DOM-XSS'},{org:'N45HT',type:'ack',reward:'HACKERONE THANKS',link:'https://hackerone.com/n45ht/thanks',desc:'Business Login Error Reports'},{org:'NCIIPC INDIA',type:'ack',reward:'ACKNOWLEDGEMENTS',link:'#',desc:'Bugs on Indian Govt. Sites'},{org:'CERT-IN INDIA',type:'ack',reward:'ACKNOWLEDGEMENTS',link:'#',desc:'Various Incidents & Bugs'},{org:'CERT-PH PHILIPPINES',type:'ack',reward:'ACKNOWLEDGEMENTS',link:'#',desc:'Bugs on Philippines Govt. Sites'}];
-const certsData=[{n:'eMAPT',i:'INE eLearnSecurity',c:'cert',icon:'fa-shield-halved'},{n:'CRTP',i:'Altered Security',c:'cert',icon:'fa-user-secret'},{n:'eCPPTv2',i:'INE eLearnSecurity',c:'cert',icon:'fa-laptop-code'},{n:'eWPTXv2',i:'INE eLearnSecurity',c:'cert',icon:'fa-globe'},{n:'C|EH Practical',i:'EC-Council',c:'cert',icon:'fa-user-shield'},{n:'CAP',i:'The SecOps Group',c:'cert',icon:'fa-network-wired'},{n:'EHE',i:'EC-Council Codered',c:'cert',icon:'fa-shield'},{n:'NSE 1',i:'Fortinet NSE',c:'cert',icon:'fa-fire'},{n:'NSE 2',i:'Fortinet NSE',c:'cert',icon:'fa-fire'},{n:'Pre Security',i:'TryHackMe',c:'cert',icon:'fa-terminal'},{n:'Web Fundamentals',i:'TryHackMe',c:'cert',icon:'fa-code'},{n:'Jr Penetration Tester',i:'TryHackMe',c:'cert',icon:'fa-bug'},{n:'Offensive Pentesting',i:'TryHackMe',c:'cert',icon:'fa-crosshairs'},{n:'Red Teaming',i:'TryHackMe',c:'cert',icon:'fa-skull'},{n:'Cyber Defense',i:'TryHackMe',c:'cert',icon:'fa-shield-virus'},{n:'Security Engineer',i:'TryHackMe',c:'cert',icon:'fa-gear'},{n:'Linux Administration',i:'CSI Linux',c:'cert',icon:'fa-server'},{n:'OSINT',i:'CSI Linux',c:'cert',icon:'fa-magnifying-glass'},{n:'Entrepreneurship',i:'Skillfront',c:'cert',icon:'fa-rocket'},{n:'Ethical Hacking',i:'Codered',c:'cert',icon:'fa-hat-cowboy'},{n:'Web Security',i:'Udemy',c:'cert',icon:'fa-lock'},{n:'Network Security',i:'Udemy',c:'cert',icon:'fa-wifi'},{n:'CCNA Basics',i:'Cisco',c:'cert',icon:'fa-route'},{n:'CyberOps Associate',i:'Cisco',c:'cert',icon:'fa-binoculars'},{n:'Red Team Ops',i:'Hacking Flix',c:'cert',icon:'fa-dragon'},{n:'Red Team Workshop',i:'RedTeam Hacker Academy',c:'workshop',icon:'fa-users-gear'},{n:'Cyber Security Workshop',i:'ISTE',c:'workshop',icon:'fa-people-group'},{n:'Ethical Hacking Workshop',i:'ISTE',c:'workshop',icon:'fa-graduation-cap'},{n:'CCNA Bootcamp',i:'KVCH',c:'workshop',icon:'fa-microchip'},{n:'Python Workshop',i:'ANT WAK',c:'workshop',icon:'fa-python'},{n:'Web Dev Bootcamp',i:'ANT WAK',c:'workshop',icon:'fa-layer-group'},{n:'AI/ML Basics',i:'ANT WAK',c:'workshop',icon:'fa-brain'},{n:'Data Structures',i:'Coding Blocks',c:'workshop',icon:'fa-cubes'},{n:'C++ Bootcamp',i:'Coding Blocks',c:'workshop',icon:'fa-code'},{n:'Java Course',i:'Coding Blocks',c:'workshop',icon:'fa-mug-hot'},{n:'CFB Internship',i:'CFB',c:'internship',icon:'fa-briefcase'},{n:'Cyber Security Intern',i:'CFB',c:'internship',icon:'fa-building-shield'},{n:'SOC Analyst Intern',i:'CFB',c:'internship',icon:'fa-desktop'},{n:'Threat Intel Intern',i:'CFB',c:'internship',icon:'fa-crosshairs'},{n:'Letter of Recommendation',i:'CFB',c:'lor',icon:'fa-file-lines'},{n:'Letter of Recommendation',i:'CFB',c:'lor',icon:'fa-file-signature'}];
-const contactData=[{icon:'fa-envelope',l:'Email For Any Query',v:'contactdreamer@duck.com',link:'mailto:contactdreamer@duck.com'},{icon:'fa-envelope',l:'CyberXield Trainings / VAPT',v:'rajnish@cyberxield.in',link:'mailto:rajnish@cyberxield.in'},{icon:'fa-whatsapp',l:'WhatsApp Me',v:'Click Here To Message',link:'https://wa.me/message/5FCTHDC4VX2RO1'},{icon:'fa-instagram',l:'Get In Touch On Insta',v:'Hey Here I Am...',link:'https://www.instagram.com/i_eh_dreamer/'},{icon:'fa-threads',l:'Get In Touch On Threads',v:'Catch The Threads...',link:'https://www.threads.net/@i_eh_dreamer'},{icon:'fa-x-twitter',l:'Get In Touch On X',v:'Click Me On X...',link:'https://x.com/i_eh_dreamer/'}];
+const certsData=[{n:'eMAPT',i:'INE eLearnSecurity',c:'cert',icon:'fa-shield-halved',img:'images/logoemapt.png',cert:'images/emapt.png'},{n:'CRTP',i:'Altered Security',c:'cert',icon:'fa-user-secret',img:'images/logocrtp.png',cert:'images/crtp.png'},{n:'eCPPTv2',i:'INE eLearnSecurity',c:'cert',icon:'fa-laptop-code',img:'images/logoecppt.png',cert:'images/eCPPT.png'},{n:'eWPTXv2',i:'INE eLearnSecurity',c:'cert',icon:'fa-globe',img:'images/logoewptxv2.png',cert:'images/ewptxv2.png'},{n:'C|EH Practical',i:'EC-Council',c:'cert',icon:'fa-user-shield',img:'images/CEH-Practical-Logo.png',cert:'images/CEH.png'},{n:'CAP',i:'The SecOps Group',c:'cert',icon:'fa-network-wired',img:'images/cap.png',cert:'images/cap_cert.png'},{n:'EHE',i:'EC-Council Codered',c:'cert',icon:'fa-shield',cert:'images/EHE.png'},{n:'NSE 1',i:'Fortinet NSE',c:'cert',icon:'fa-fire',cert:'images/nse1.png'},{n:'NSE 2',i:'Fortinet NSE',c:'cert',icon:'fa-fire',cert:'images/nse2.jpg'},{n:'Pre Security',i:'TryHackMe',c:'cert',icon:'fa-terminal'},{n:'Web Fundamentals',i:'TryHackMe',c:'cert',icon:'fa-code'},{n:'Jr Penetration Tester',i:'TryHackMe',c:'cert',icon:'fa-bug'},{n:'Offensive Pentesting',i:'TryHackMe',c:'cert',icon:'fa-crosshairs'},{n:'Red Teaming',i:'TryHackMe',c:'cert',icon:'fa-skull'},{n:'Cyber Defense',i:'TryHackMe',c:'cert',icon:'fa-shield-virus'},{n:'Security Engineer',i:'TryHackMe',c:'cert',icon:'fa-gear'},{n:'Linux Administration',i:'CSI Linux',c:'cert',icon:'fa-server'},{n:'OSINT',i:'CSI Linux',c:'cert',icon:'fa-magnifying-glass'},{n:'Entrepreneurship',i:'Skillfront',c:'cert',icon:'fa-rocket',cert:'images/sf.png'},{n:'Ethical Hacking',i:'Codered',c:'cert',icon:'fa-hat-cowboy'},{n:'Web Security',i:'Udemy',c:'cert',icon:'fa-lock'},{n:'Network Security',i:'Udemy',c:'cert',icon:'fa-wifi'},{n:'CCNA Basics',i:'Cisco',c:'cert',icon:'fa-route'},{n:'CyberOps Associate',i:'Cisco',c:'cert',icon:'fa-binoculars'},{n:'Red Team Ops',i:'Hacking Flix',c:'cert',icon:'fa-dragon'},{n:'Red Team Workshop',i:'RedTeam Hacker Academy',c:'workshop',icon:'fa-users-gear',cert:'images/redteam.png'},{n:'Cyber Security Workshop',i:'ISTE',c:'workshop',icon:'fa-people-group'},{n:'Ethical Hacking Workshop',i:'ISTE',c:'workshop',icon:'fa-graduation-cap'},{n:'CCNA Bootcamp',i:'KVCH',c:'workshop',icon:'fa-microchip'},{n:'Python Workshop',i:'ANT WAK',c:'workshop',icon:'fa-python'},{n:'Web Dev Bootcamp',i:'ANT WAK',c:'workshop',icon:'fa-layer-group'},{n:'AI/ML Basics',i:'ANT WAK',c:'workshop',icon:'fa-brain'},{n:'Data Structures',i:'Coding Blocks',c:'workshop',icon:'fa-cubes'},{n:'C++ Bootcamp',i:'Coding Blocks',c:'workshop',icon:'fa-code'},{n:'Java Course',i:'Coding Blocks',c:'workshop',icon:'fa-mug-hot'},{n:'CFB Internship',i:'CFB',c:'internship',icon:'fa-briefcase'},{n:'Cyber Security Intern',i:'CFB',c:'internship',icon:'fa-building-shield'},{n:'SOC Analyst Intern',i:'CFB',c:'internship',icon:'fa-desktop'},{n:'Threat Intel Intern',i:'CFB',c:'internship',icon:'fa-crosshairs'},{n:'Letter of Recommendation',i:'CFB',c:'lor',icon:'fa-file-lines',cert:'images/LOR%20(1).png'},{n:'Letter of Recommendation',i:'CFB',c:'lor',icon:'fa-file-signature',cert:'images/LOR%20(2).png'}];
+const contactData=[{icon:'fa-envelope',l:'Email For Any Query',v:'contactdreamer@duck.com',link:'mailto:contactdreamer@duck.com'},{icon:'fa-envelope',l:'CyberXield Trainings / VAPT',v:'rajnish@cyberxield.in',link:'mailto:rajnish@cyberxield.in'},{icon:'fa-whatsapp',l:'WhatsApp Me',v:'Click Here To Message',link:'https://wa.me/message/5FCTHDC4VX2RO1'},{icon:'fa-instagram',l:'Get In Touch On Insta',v:'Hey Here I Am...',link:'https://www.instagram.com/i_eh_dreamer/'},{icon:'fa-x-twitter',l:'Get In Touch On X',v:'Click Me On X...',link:'https://x.com/i_eh_dreamer/'}];
 const expData=[
  {co:'SECNORA®',loc:'Tartumaa, Estonia',period:'Jun 2022 — Present',icon:'fa-shield-halved',
   roles:[['Senior Security Engineer — Team Lead','Aug 2025 — Present'],['Security Engineer','Feb 2024 — Aug 2025'],['Security Tester','Apr 2023 — Jan 2024'],['Cyber Security Analyst','Jun 2022 — Mar 2023']],
@@ -938,12 +959,15 @@ const videosData=[
  {id:'evDsE1pySbc',t:'Mass XSS On Hitachi — 1 Bug, 79 Websites',m:'500+ views · 2022'}];
 const statsData=[{v:4,suf:'+',l:'Years in Offensive Security'},{v:100,suf:'+',l:'VAPT Projects Delivered'},{v:10,suf:'+',l:'Halls of Fame'},{v:1,pre:'TOP ',suf:'%',l:'TryHackMe Global'}];
 const bootLines=['<span class="tp">&gt;</span> boot iehdreamer.in <span class="ts">v2.0</span>','<span class="tp">&gt;</span> loading modules [three.js] [gsap] [lenis] ... <span class="tp">OK</span>','<span class="tp">&gt;</span> whoami <span class="tm">→ rajnish kumar (dreamer)</span>','<span class="tp">&gt;</span> access granted <span class="boot-cursor"></span>'];
-const FA_BRANDS=['fa-whatsapp','fa-instagram','fa-threads','fa-x-twitter','fa-linkedin-in','fa-youtube','fa-github','fa-python'];
+const FA_BRANDS=['fa-whatsapp','fa-instagram','fa-x-twitter','fa-linkedin-in','fa-youtube','fa-github','fa-python'];
 const ico=i=>(FA_BRANDS.includes(i)?'fab ':'fas ')+i;
 
 /* ==================== RENDER ==================== */
 document.getElementById('about-details').innerHTML=aboutFields.map(f=>`<li><strong>${f[0]}</strong> ${f[2]?`<a href="${f[2]}" target="_blank" rel="noopener">${f[1]}</a>`:f[1]}</li>`).join('');
-document.getElementById('skills-container').innerHTML=skillsData.map(s=>`<div class="skill-row"><div class="skill-info"><span class="skill-name">${s.n}</span><span class="skill-val">${s.p}%</span></div><div class="skill-track"><div class="skill-fill" data-w="${s.p}" style="--fill:${s.p}%"></div></div></div>`).join('');
+const skillRows=arr=>arr.map(s=>`<div class="skill-row"><div class="skill-info"><span class="skill-name">${s.n}</span><span class="skill-val">${s.p}%</span></div><div class="skill-track"><div class="skill-fill" data-w="${s.p}" style="--fill:${s.p}%"></div></div></div>`).join('');
+document.getElementById('skills-container').innerHTML=
+  `<div class="skill-group-label"><i class="fas fa-robot"></i> // ai_offensive — genai · llm · agentic</div>`+skillRows(aiSkillsData)+
+  `<div class="skill-group-label"><i class="fas fa-crosshairs"></i> // core_offensive</div>`+skillRows(skillsData);
 document.getElementById('stats-row').innerHTML=statsData.map(s=>`<div class="stat corner-card"><div class="stat-num">${s.pre||''}<span class="cnt" data-target="${s.v}">0</span><sup>${s.suf}</sup></div><div class="stat-lbl">${s.l}</div></div>`).join('');
 document.getElementById('exp-timeline').innerHTML='<div class="tl-progress"></div>'+expData.map(e=>`<div class="tl-item${e.edu?' tl-edu':''}"><div class="tl-node"></div><div class="tl-card corner-card"><div class="tl-co"><i class="fas ${e.icon}"></i><h3>${e.co}</h3><span class="tl-period">${e.period}</span></div><div class="tl-loc"><i class="fas fa-location-dot"></i>${e.loc}</div>${e.roles.length?`<ul class="tl-roles">${e.roles.map(r=>`<li>${r[0]}<span class="rd">${r[1]}</span></li>`).join('')}</ul>`:''}<p class="tl-desc">${e.desc}</p></div></div>`).join('');
 document.getElementById('thm-card').innerHTML=`<i class="fas fa-crown"></i><div><div class="thm-name">dreamereh <span class="lvl">[0xD]</span> <span class="leg">[Legend]</span></div><div class="thm-rank">World's Top 1% on TryHackMe — Level 13</div><div class="thm-metrics"><div class="thm-metric"><div class="val cnt" data-target="16621">0</div><div class="lbl">Points</div></div><div class="thm-metric"><div class="val cnt" data-target="153">0</div><div class="lbl">Rooms</div></div><div class="thm-metric"><div class="val cnt" data-target="22">0</div><div class="lbl">Badges</div></div></div></div>`;
@@ -954,7 +978,7 @@ const achTypes=[['all','All'],['hof','Hall of Fame'],['bounty','Bounty'],['ack',
 document.getElementById('ach-filters').innerHTML=achTypes.map(([t,l],i)=>`<button class="filter-chip${i===0?' on':''}" data-t="${t}">${l}</button>`).join('');
 function renderCerts(f='all'){
   const d=f==='all'?certsData:certsData.filter(c=>c.c===f);
-  document.getElementById('cert-grid').innerHTML=d.map(c=>`<div class="cert-card" tabindex="0" aria-label="${c.n} — ${c.i}"><div class="cert-card-inner"><div class="cert-f"><i class="${ico(c.icon)}"></i><h4>${c.n}</h4></div><div class="cert-b"><h4>${c.n}</h4><p>${c.i}</p></div></div></div>`).join('');
+  document.getElementById('cert-grid').innerHTML=d.map(c=>`<div class="cert-card" tabindex="0" aria-label="${c.n} — ${c.i}"><div class="cert-card-inner"><div class="cert-f">${c.img?`<img class="cert-logo" src="${c.img}" alt="" loading="lazy">`:`<i class="${ico(c.icon)}"></i>`}<h4>${c.n}</h4></div><div class="cert-b"><h4>${c.n}</h4><p>${c.i}</p>${c.cert?`<a class="cert-view" href="${c.cert}" target="_blank" rel="noopener">VIEW CERT <i class="fas fa-arrow-up-right-from-square"></i></a>`:''}</div></div></div>`).join('');
 }
 const certCats=[...new Set(certsData.map(c=>c.c))];
 document.getElementById('cert-filters').innerHTML=`<button class="filter-chip on" data-c="all">All</button>`+certCats.map(c=>`<button class="filter-chip" data-c="${c}">${c==='lor'?'LoR':c.charAt(0).toUpperCase()+c.slice(1)}</button>`).join('');
@@ -993,7 +1017,7 @@ const store={
 })();
 
 // Typing rotator
-const roles=['Senior Security Engineer - Team Lead','Red Team Professional','Bug Bounty Hunter','Security Researcher','Founder of CyberXield','Active Directory Exploitation Specialist'];
+const roles=['Senior Security Engineer - Team Lead','Red Team Professional','AI / LLM Red Teamer','Bug Bounty Hunter','Security Researcher','Founder of CyberXield','Active Directory Exploitation Specialist'];
 if(RM){document.getElementById('typing-out').textContent=roles[0];}
 else (function type(ri=0,ci=0,del=false){
   const cur=roles[ri];
@@ -1006,11 +1030,13 @@ else (function type(ri=0,ci=0,del=false){
 })();
 
 // Logo word scramble — R4JN15H / DR34M3R / RAJNISH / DREAMER
+// one timer writes identical frames to every .logo-word (navbar + footer stay in sync)
 (function(){
-  const el=document.getElementById('logo-word');if(!el)return;
+  const els=[...document.querySelectorAll('.logo-word')];if(!els.length)return;
   const words=['R4JN15H','DR34M3R','RAJNISH','DREAMER'];
   if(RM)return; // reduced motion: static logo
   const glyphs='!<>-_\\/[]{}=+*^?#01';
+  const write=t=>els.forEach(el=>el.textContent=t);
   let wi=0,timer=null;
   function scramble(to){
     if(timer)clearInterval(timer);
@@ -1021,8 +1047,8 @@ else (function type(ri=0,ci=0,del=false){
       for(let i=0;i<to.length;i++){
         out+=i<reveal-0.8?to[i]:glyphs[Math.floor(Math.random()*glyphs.length)];
       }
-      el.textContent=out;
-      if(frame>=total){clearInterval(timer);timer=null;el.textContent=to;}
+      write(out);
+      if(frame>=total){clearInterval(timer);timer=null;write(to);}
     },42);
   }
   setInterval(()=>{if(document.hidden)return;wi=(wi+1)%words.length;scramble(words[wi]);},3200);
@@ -1134,7 +1160,7 @@ document.getElementById('back-top').addEventListener('click',()=>{
   size();window.addEventListener('resize',size);
   if(RM){c.style.opacity=0;return;}
   const ch='ｦｧｨｩｪｫｬｭｮｯｱｲｳｵｶｷｸｹｺｻｼｽｾｿﾀﾁﾂﾃﾄﾅﾆﾇﾈﾉ0123456789ABCDEF';
-  const fs=13;let drops=Array(Math.floor(c.width/fs)).fill(1);
+  const fs=15;let drops=Array(Math.floor(c.width/fs)).fill(1);
   window.addEventListener('resize',()=>{drops=Array(Math.floor(c.width/fs)).fill(1);});
   setInterval(()=>{
     if(document.hidden||document.documentElement.getAttribute('data-mode')==='light'||parseFloat(c.style.opacity||0.22)<0.01)return;
@@ -1177,7 +1203,7 @@ document.getElementById('back-top').addEventListener('click',()=>{
   // Lenis smooth scroll
   let lenis=null;
   if(typeof Lenis!=='undefined'){
-    lenis=new Lenis({lerp:0.1});
+    lenis=new Lenis({lerp:0.16,wheelMultiplier:1.1});
     window.__lenis=lenis;
     lenis.on('scroll',ScrollTrigger.update);
     (function raf(time){lenis.raf(time);requestAnimationFrame(raf);})(performance.now());
