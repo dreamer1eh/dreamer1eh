@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Rajnish Kumar (Dreamer)</h1>
-<h3 align="center">Founder of CyberXield & Cyber Security Expert from India</h3>
+<h3 align="center">Founder of Vantixia & Cyber Security Expert from India</h3>
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=dreamer1eh&label=Profile%20views&color=0e75b6&style=flat" alt="dreamer1eh" /> </p>
 
 - 🔭 I’m currently working professional in **[SECNORA OÜ, Estonia](https://secnora.com)**
@@ -8,9 +8,9 @@
 
 - 🕵️ I have the hall of fame (HoF) from major companies some of them are [MICROSOFT](https://msrc.microsoft.com/update-guide/acknowledgement/online), [ADOBE](https://helpx.adobe.com/security/acknowledgements.html#:~:text=RAJNISH%20KUMAR%20(Dreamer)), [NVIDIA](https://www.nvidia.com/en-in/product-security/acknowledgements/#:~:text=Rajnish%20Kumar%20(Dreamer)), [VISMA](https://www.visma.com/trust-centre/security/hall-of-fame#:~:text=2023-,Rajnish%20Kumar%20(Dreamer),-2023), [JP MORGAN CHASE & CO.](https://responsibledisclosure.jpmorganchase.com/hc/en-us/articles/360023828114-Recognition-for-Responsible-Disclosures#:~:text=RAJNISH%20KUMAR%20(Dreamer)), [U.S. Govt HHS](https://www.hhs.gov/vulnerability-disclosure-policy/acknowledgments/index.html), and many more.
 
-- 🏢 I’m Founder & CEO of my startup named **[CyberXield](https://cyberxield.in)**
+- 🏢 I’m Founder & CEO of my startup named **[Vantixia](https://vantixia.in)**
 
-- 🤝 I’m looking to collaborate on **[InfoSec VAPT Projects](https://cyberxield.in/service.html)**
+- 🤝 I’m looking to collaborate on **[InfoSec VAPT Projects](https://vantixia.in/services/)**
 
 - 👨‍💻 Know more about me on my portfolio at **[iehdreamer.in](https://iehdreamer.in)**
 
