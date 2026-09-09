@@ -38,12 +38,13 @@
 ### 📜 `/var/log/certifications.log`
 
 <div align="center">
-
-| Defensive / Offensive Certifications |
-| :---: |
-| <a href="https://certs.ine.com/ea676ba8-8b23-408a-b4c7-94ccd9596f20"><img src="https://img.shields.io/badge/eWPTXv2-Certified_Web_Pentester_Extreme-000000?style=for-the-badge&logo=ine&logoColor=red" alt="eWPTX" /></a> <a href="https://certs.ine.com/4a25911a-ca09-4d11-9633-e64af517a9a1#gs.49kk9n"><img src="https://img.shields.io/badge/eCPPTv2-Certified_Professional_Pentester-000000?style=for-the-badge&logo=ine&logoColor=gold" alt="eCPPT" /></a> <a href="https://www.credential.net/8fc24bdc-2448-49b9-b93c-e16f63aeb682"><img src="https://img.shields.io/badge/CRTP-Active_Directory_Pentester-000000?style=for-the-badge&logo=windows&logoColor=blue" alt="CRTP" /></a>
-| <a href="https://certs.ine.com/aa484ed9-17f8-4e72-a4bd-09316e6d693c"><img src="https://img.shields.io/badge/eMAPT-Mobile_App_Pentester-000000?style=for-the-badge&logo=android&logoColor=green" alt="eMAPT" /></a> <a href="https://aspen.eccouncil.org/VerifyBadge?type=certification&a=wMX/qwIQ0zvbLtivOaYeRlKEYJ4/gkuue8KWEbiKqA0="><img src="https://img.shields.io/badge/CPENTv2-Penetration_Tester-000000?style=for-the-badge&logo=linux&logoColor=purple" alt="CPENT" /></a> <a href="https://iehdreamer.in/images/CEH.png"><img src="https://img.shields.io/badge/C\|EH_Practical-Ethical_Hacker-000000?style=for-the-badge&logo=hackthebox&logoColor=red" alt="CEH" /></a> |
-
+  <a href="https://certs.ine.com/ea676ba8-8b23-408a-b4c7-94ccd9596f20"><img src="https://img.shields.io/badge/eWPTXv2-Certified_Web_Pentester_Extreme-000000?style=for-the-badge&logo=ine&logoColor=red" alt="eWPTX" /></a>
+  <a href="https://certs.ine.com/4a25911a-ca09-4d11-9633-e64af517a9a1#gs.49kk9n"><img src="https://img.shields.io/badge/eCPPTv2-Certified_Professional_Pentester-000000?style=for-the-badge&logo=ine&logoColor=gold" alt="eCPPT" /></a>
+  <a href="https://www.credential.net/8fc24bdc-2448-49b9-b93c-e16f63aeb682"><img src="https://img.shields.io/badge/CRTP-Active_Directory_Pentester-000000?style=for-the-badge&logo=windows&logoColor=blue" alt="CRTP" /></a>
+  <br><br>
+  <a href="https://certs.ine.com/aa484ed9-17f8-4e72-a4bd-09316e6d693c"><img src="https://img.shields.io/badge/eMAPT-Mobile_App_Pentester-000000?style=for-the-badge&logo=android&logoColor=green" alt="eMAPT" /></a>
+  <a href="https://aspen.eccouncil.org/VerifyBadge?type=certification&a=wMX/qwIQ0zvbLtivOaYeRlKEYJ4/gkuue8KWEbiKqA0="><img src="https://img.shields.io/badge/CPENTv2-Penetration_Tester-000000?style=for-the-badge&logo=linux&logoColor=purple" alt="CPENT" /></a>
+  <a href="https://iehdreamer.in/images/CEH.png"><img src="https://img.shields.io/badge/C|EH_Practical-Ethical_Hacker-000000?style=for-the-badge&logo=hackthebox&logoColor=red" alt="CEH" /></a>
 </div>
 
 <br>
@@ -55,16 +56,16 @@
 <br>
 
 **> Offensive & Reconnaissance**
-`Burp Suite Pro` `Nuclei` `Nmap` `Metasploit` `httpx` `subfinder` `ffuf` `Dalfox` `Ghauri` `reNgine` `Wireshark`
+<br>`Burp Suite Pro` `Nuclei` `Nmap` `Metasploit` `httpx` `subfinder` `ffuf` `Dalfox` `Ghauri` `reNgine` `Wireshark`
 
 **> Scripting & Automation**
-`Python 3` `Bash` `C` `n8n` `Playwright` `JavaScript` `Docker`
+<br>`Python 3` `Bash` `C` `n8n` `Playwright` `JavaScript` `Docker`
 
 **> Cloud & Infrastructure**
-`AWS` `Azure` `GCP` `Kali Linux` `Debian` `OpenCTI`
+<br>`AWS` `Azure` `GCP` `Kali Linux` `Debian` `OpenCTI`
 
 **> Hardware & Security**
-`Custom Rigs` `NVIDIA RTX` `NordLayer` `Bitwarden` `FIDO2/Passkeys`
+<br>`Custom Rigs` `NVIDIA RTX` `NordLayer` `Bitwarden` `FIDO2/Passkeys`
 
 <br>
 <div align="center">
@@ -78,12 +79,12 @@
 
 Recognized by top-tier global enterprises for responsible vulnerability disclosures:
 
-> 🟩 **[Microsoft MSRC](https://msrc.microsoft.com/update-guide/acknowledgement/online)**
-> 🟩 **[Adobe](https://helpx.adobe.com/security/acknowledgements.html#:~:text=RAJNISH%20KUMAR%20(Dreamer))**
-> 🟩 **[NVIDIA Product Security](https://www.nvidia.com/en-in/product-security/acknowledgements/#:~:text=Rajnish%20Kumar%20(Dreamer))**
-> 🟩 **[JPMorgan Chase & Co.](https://responsibledisclosure.jpmorganchase.com/hc/en-us/articles/360023828114-Recognition-for-Responsible-Disclosures#:~:text=RAJNISH%20KUMAR%20(Dreamer))**
-> 🟩 **[Visma Trust Centre](https://www.visma.com/trust-centre/security/hall-of-fame#:~:text=2023-,Rajnish%20Kumar%20(Dreamer),-2023)**
-> 🟩 **[U.S. Dept. of HHS](https://www.hhs.gov/vulnerability-disclosure-policy/acknowledgments/index.html)**
+> 🟩 **[Microsoft MSRC](https://msrc.microsoft.com/update-guide/acknowledgement/online)**  
+> 🟩 **[Adobe](https://helpx.adobe.com/security/acknowledgements.html#:~:text=RAJNISH%20KUMAR%20(Dreamer))**  
+> 🟩 **[NVIDIA Product Security](https://www.nvidia.com/en-in/product-security/acknowledgements/#:~:text=Rajnish%20Kumar%20(Dreamer))**  
+> 🟩 **[JPMorgan Chase & Co.](https://responsibledisclosure.jpmorganchase.com/hc/en-us/articles/360023828114-Recognition-for-Responsible-Disclosures#:~:text=RAJNISH%20KUMAR%20(Dreamer))**  
+> 🟩 **[Visma Trust Centre](https://www.visma.com/trust-centre/security/hall-of-fame#:~:text=2023-,Rajnish%20Kumar%20(Dreamer),-2023)**  
+> 🟩 **[U.S. Dept. of HHS](https://www.hhs.gov/vulnerability-disclosure-policy/acknowledgments/index.html)**  
 
 <br>
 
