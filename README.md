@@ -1,37 +1,120 @@
-<h1 align="center">Hi 👋, I'm Rajnish Kumar (Dreamer)</h1>
-<h3 align="center">Founder of Vantixia & Cyber Security Expert from India</h3>
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=dreamer1eh&label=Profile%20views&color=0e75b6&style=flat" alt="dreamer1eh" /> </p>
+<div align="center">
 
-- 🔭 I’m currently working professional in **[SECNORA OÜ, Estonia](https://secnora.com)**
+# Hi 👋, I'm Rajnish Kumar (Dreamer)
+### Founder of Vantixia | Senior Offensive Security Engineer & Red Teamer
 
-- 🏅 I'm having recognized certs as **[C|EH](https://iehdreamer.in/images/CEH.png), [eWPTX](https://certs.ine.com/ea676ba8-8b23-408a-b4c7-94ccd9596f20), [eCPPT](https://certs.ine.com/4a25911a-ca09-4d11-9633-e64af517a9a1#gs.49kk9n), [CRTP](https://www.credential.net/8fc24bdc-2448-49b9-b93c-e16f63aeb682), [eMAPT](https://certs.ine.com/aa484ed9-17f8-4e72-a4bd-09316e6d693c), [CPENTv2](https://aspen.eccouncil.org/VerifyBadge?type=certification&a=wMX/qwIQ0zvbLtivOaYeRlKEYJ4/gkuue8KWEbiKqA0=)**
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3000&pause=1000&color=00FF66&center=true&vCenter=true&width=550&lines=Offensive+Security+%26+Red+Teaming;Web+%26+Mobile+Application+VAPT;Bug+Bounty+Hunter+%26+Security+Researcher;Founder+%40+Vantixia)](https://git.io/typing-svg)
 
-- 🕵️ I have the hall of fame (HoF) from major companies some of them are [MICROSOFT](https://msrc.microsoft.com/update-guide/acknowledgement/online), [ADOBE](https://helpx.adobe.com/security/acknowledgements.html#:~:text=RAJNISH%20KUMAR%20(Dreamer)), [NVIDIA](https://www.nvidia.com/en-in/product-security/acknowledgements/#:~:text=Rajnish%20Kumar%20(Dreamer)), [VISMA](https://www.visma.com/trust-centre/security/hall-of-fame#:~:text=2023-,Rajnish%20Kumar%20(Dreamer),-2023), [JP MORGAN CHASE & CO.](https://responsibledisclosure.jpmorganchase.com/hc/en-us/articles/360023828114-Recognition-for-Responsible-Disclosures#:~:text=RAJNISH%20KUMAR%20(Dreamer)), [U.S. Govt HHS](https://www.hhs.gov/vulnerability-disclosure-policy/acknowledgments/index.html), and many more.
-
-- 🏢 I’m Founder & CEO of my startup named **[Vantixia](https://vantixia.in)**
-
-- 🤝 I’m looking to collaborate on **[InfoSec VAPT Projects](https://vantixia.in/services/)**
-
-- 👨‍💻 Know more about me on my portfolio at **[iehdreamer.in](https://iehdreamer.in)**
-
-- 💬 Ask me about **Cybersecurity Trainings & Services**
-
-- 📫 How to reach me **dreamerinfosec@duck.com**
-
-- 📄 Know about my experiences on my **[LinkedIn](https://www.linkedin.com/in/rajnish-kumar-eh/)** Page
-
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://twitter.com/i_eh_dreamer" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="i_eh_dreamer" height="30" width="40" /></a>
-<a href="https://linkedin.com/in/rajnish-kumar-eh" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="rajnish-kumar-eh" height="30" width="40" /></a>
-<a href="https://fb.com/iehdreamer" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="iehdreamer" height="30" width="40" /></a>
-<a href="https://instagram.com/i_eh_dreamer" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="i_eh_dreamer" height="30" width="40" /></a>
-<a href="https://www.youtube.com/c/iehdreamer" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="iehdreamer" height="30" width="40" /></a>
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=dreamer1eh&label=Profile%20Views&color=0e75b6&style=flat-square" alt="dreamer1eh" />
 </p>
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://aws.amazon.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="aws" width="40" height="40"/> </a> <a href="https://azure.microsoft.com/en-in/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-icon.svg" alt="azure" width="40" height="40"/> </a> <a href="https://www.gnu.org/software/bash/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" alt="bash" width="40" height="40"/> </a> <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://cloud.google.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg" alt="gcp" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> <a href="https://postman.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> </p>
+---
 
-<h3 align="left">Some of my holopin badges: </h3>
+### 🌐 Connect With Me
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/rajnish-kumar-eh)
+[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=x&logoColor=white)](https://twitter.com/i_eh_dreamer)
+[![Portfolio](https://img.shields.io/badge/Portfolio-iehdreamer.in-000000?style=for-the-badge&logo=google-chrome&logoColor=white)](https://iehdreamer.in)
+[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/c/iehdreamer)
+[![Email](https://img.shields.io/badge/Email-dreamerinfosec%40duck.com-orange?style=for-the-badge&logo=duckduckgo&logoColor=white)](mailto:dreamerinfosec@duck.com)
+
+</div>
+
+---
+
+### 🚀 About Me
+
+```yaml
+Name: Rajnish Kumar
+Role: Founder & CEO @ Vantixia | Security Professional @ SECNORA OÜ
+Focus: Red Teaming, Cloud/Web/Mobile VAPT, Threat Emulation
+Open For: Enterprise VAPT, Red Team Engagements, Security Consulting
+Website: https://vantixia.in
+```
+
+- 🔭 Working on high-impact penetration testing and red teaming engagements at **[SECNORA OÜ, Estonia](https://secnora.com)**
+- 🏢 Founder & CEO at **[Vantixia](https://vantixia.in)**, specializing in offensive security and VAPT operations
+- 🤝 Looking to collaborate on **[InfoSec & VAPT Projects](https://vantixia.in/services/)**
+- 💬 Ask me about **Offensive Security, Web/API Pentesting, Active Directory, and Threat Research**
+- 📝 Detailed career history and posts available on my **[LinkedIn Profile](https://www.linkedin.com/in/rajnish-kumar-eh/)**
+
+---
+
+### 🏆 Hall of Fame & Responsible Disclosures
+
+<details>
+<summary><b>Click to expand acknowledged Hall of Fames</b></summary>
+<br>
+
+Recognized by global technology enterprises and institutions for identifying security vulnerabilities:
+
+- 🏛️ **[Microsoft](https://msrc.microsoft.com/update-guide/acknowledgement/online)**
+- 🎨 **[Adobe](https://helpx.adobe.com/security/acknowledgements.html#:~:text=RAJNISH%20KUMAR%20(Dreamer))**
+- ⚡ **[NVIDIA](https://www.nvidia.com/en-in/product-security/acknowledgements/#:~:text=Rajnish%20Kumar%20(Dreamer))**
+- 🏦 **[JPMorgan Chase & Co.](https://responsibledisclosure.jpmorganchase.com/hc/en-us/articles/360023828114-Recognition-for-Responsible-Disclosures#:~:text=RAJNISH%20KUMAR%20(Dreamer))**
+- 🛡️ **[Visma](https://www.visma.com/trust-centre/security/hall-of-fame#:~:text=2023-,Rajnish%20Kumar%20(Dreamer),-2023)**
+- 🇺🇸 **[U.S. Department of Health & Human Services (HHS)](https://www.hhs.gov/vulnerability-disclosure-policy/acknowledgments/index.html)**
+
+</details>
+
+---
+
+### 🏅 Verified Certifications
+
+<div align="center">
+
+<a href="https://certs.ine.com/ea676ba8-8b23-408a-b4c7-94ccd9596f20"><img src="https://img.shields.io/badge/eWPTXv2-Certified_Web_Pentester_Extreme-red?style=for-the-badge&logo=ine" alt="eWPTX" /></a>
+<a href="https://www.credential.net/8fc24bdc-2448-49b9-b93c-e16f63aeb682"><img src="https://img.shields.io/badge/CRTP-Active_Directory_Pentester-blue?style=for-the-badge" alt="CRTP" /></a>
+<a href="https://certs.ine.com/4a25911a-ca09-4d11-9633-e64af517a9a1#gs.49kk9n"><img src="https://img.shields.io/badge/eCPPTv2-Certified_Professional_Pentester-gold?style=for-the-badge&logo=ine" alt="eCPPT" /></a>
+<a href="https://certs.ine.com/aa484ed9-17f8-4e72-a4bd-09316e6d693c"><img src="https://img.shields.io/badge/eMAPT-Mobile_Application_Pentester-green?style=for-the-badge&logo=ine" alt="eMAPT" /></a>
+<a href="https://aspen.eccouncil.org/VerifyBadge?type=certification&a=wMX/qwIQ0zvbLtivOaYeRlKEYJ4/gkuue8KWEbiKqA0="><img src="https://img.shields.io/badge/CPENTv2-Penetration_Tester-purple?style=for-the-badge" alt="CPENT" /></a>
+<a href="https://iehdreamer.in/images/CEH.png"><img src="https://img.shields.io/badge/C|EH_Practical-Certified_Ethical_Hacker-darkred?style=for-the-badge" alt="CEH" /></a>
+
+</div>
+
+---
+
+### 🛠️ Arsenal & Tooling
+
+<div align="center">
+
+| Domain | Technologies & Frameworks |
+| :--- | :--- |
+| **Offensive & Assessment** | Burp Suite, Nmap, Metasploit, Nuclei, Postman, Wireshark, Bash |
+| **Languages & Scripting** | Python, Bash, C, JavaScript, Java, HTML5, CSS3 |
+| **Cloud & Infrastructure** | AWS, Microsoft Azure, Google Cloud Platform (GCP), Linux (Kali, Debian) |
+| **Version Control & Ops** | Git, GitHub, Docker, Postman API Testing |
+
+<br>
+
+<p>
+  <img src="https://skillicons.dev/icons?i=bash,python,c,java,js,linux,aws,azure,gcp,git,postman,docker&perline=6" />
+</p>
+
+</div>
+
+---
+
+### 📊 GitHub Activity & Insights
+
+<div align="center">
+
+<img src="https://github-readme-stats.vercel.app/api?username=dreamer1eh&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="Rajnish's GitHub Stats" width="48%" />
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=dreamer1eh&theme=tokyonight&hide_border=true" alt="GitHub Streak" width="48%" />
+
+</div>
+
+---
+
+### 🎖️ Badges & Accomplishments
+
+<div align="center">
 
 [![@dreamer's Holopin board](https://holopin.me/dreamer)](https://holopin.io/@dreamer)
+
+</div>
+
+<div align="center">
+  <sub>Crafted with passion for offensive security and open-source intelligence.</sub>
+</div>
